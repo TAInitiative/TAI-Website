@@ -1,0 +1,31 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-inter, 'Inter', system-ui, sans-serif);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
