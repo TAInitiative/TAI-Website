@@ -485,7 +485,7 @@ export default function HomePage() {
 
       <section
         id="community"
-        className="py-24 text-white relative overflow-hidden"
+        className="py-24 text-white relative overflow-hidden bg-slate-900"
       >
         <div className="absolute inset-0 bg-hero-sheen"></div>
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-white opacity-10 blur-3xl"></div>
