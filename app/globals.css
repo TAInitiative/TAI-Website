@@ -1,0 +1,49 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-montserrat, 'Montserrat', system-ui, sans-serif);
+  color: #1e293b;
+  background: #f8fafc;
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.hero-gradient {
+  background: radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(248, 250, 252, 0.9) 45%,
+      rgba(241, 245, 249, 0.9) 100%
+    ),
+    linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-pill {
+  background: linear-gradient(135deg, #00205b 0%, #ef3340 100%);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
