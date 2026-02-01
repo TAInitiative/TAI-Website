@@ -196,28 +196,7 @@ export default function HomePage() {
                   organizers committed to the Taiwan-US partnership.
                 </p>
               </div>
-              <div className="grid gap-4 mt-6 sm:grid-cols-2">
-                <div className="rounded-2xl border border-slate-200 bg-white/90 p-4">
-                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
-                    Members
-                  </p>
-                  <p className="text-2xl font-semibold text-slate-900 mt-1">4,200+</p>
-                </div>
-                <div className="rounded-2xl border border-slate-200 bg-white/90 p-4">
-                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
-                    Cities
-                  </p>
-                  <p className="text-2xl font-semibold text-slate-900 mt-1">18</p>
-                </div>
-                <div className="rounded-2xl border border-slate-200 bg-white/90 p-4 sm:col-span-2">
-                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
-                    Signature Program
-                  </p>
-                  <p className="text-lg font-semibold text-slate-900 mt-1">
-                    Taiwan-US Innovation Sprint
-                  </p>
-                </div>
-              </div>
+
             </div>
             <div className="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-white shadow-lg shadow-slate-200 flex items-center justify-center text-taiwan-blue">
               <i className="ph ph-star-four text-2xl"></i>
@@ -379,18 +358,7 @@ export default function HomePage() {
 
             <div className="lg:col-span-7">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                  <h3 className="text-4xl font-bold text-slate-900 mb-2">$50M+</h3>
-                  <p className="text-slate-600 text-sm">
-                    Collective funding raised by community startups in 2023.
-                  </p>
-                </div>
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                  <h3 className="text-4xl font-bold text-slate-900 mb-2">200+</h3>
-                  <p className="text-slate-600 text-sm">
-                    Active mentors from top tech companies (Google, TSMC, NVIDIA).
-                  </p>
-                </div>
+
 
                 <div className="sm:col-span-2 bg-hero-sheen p-8 rounded-2xl relative overflow-hidden group cursor-pointer transition-transform hover:-translate-y-1">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl opacity-60 -mr-16 -mt-16"></div>
@@ -524,15 +492,20 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-white opacity-10 blur-3xl"></div>
 
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
-            Become a part of the network
+          <span className="inline-block py-1 px-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold uppercase tracking-widest mb-6">
+            Join the Movement
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
+            Ready to shape the future of <br className="hidden md:block" />
+            Taiwan-US collaboration?
           </h2>
-          <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-            Whether you want to mentor, organize events, or simply stay informed,
-            there is a place for you in the Taiwan America Initiative.
+          <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+            Join over 4,000 members driving innovation, culture, and policy.
+            Get exclusive invites to events, mentorship opportunities, and our
+            weekly digest.
           </p>
 
-          <form className="max-w-md mx-auto mb-8 bg-white/10 p-2 rounded-full backdrop-blur-sm border border-white/20 flex">
+          <form className="max-w-lg mx-auto mb-8 bg-white/10 p-2 rounded-full backdrop-blur-xl border border-white/20 flex shadow-2xl shadow-blue-900/20">
             <input
               type="email"
               placeholder="Enter your email address"
@@ -541,14 +514,16 @@ export default function HomePage() {
             />
             <button
               type="button"
-              onClick={() => alert("Thank you for subscribing! We will be in touch shortly.")}
-              className="bg-white text-slate-900 px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition-colors"
+              onClick={() =>
+                alert("Thank you for subscribing! We will be in touch shortly.")
+              }
+              className="bg-white text-slate-900 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition-colors shadow-lg"
             >
-              Join
+              Join Now
             </button>
           </form>
-          <p className="text-xs text-white/70">
-            By joining, you agree to our respectful community guidelines.
+          <p className="text-xs text-white/60">
+            No spam, ever. Unsubscribe at any time.
           </p>
         </div>
       </section>
