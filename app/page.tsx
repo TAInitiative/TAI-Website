@@ -39,7 +39,7 @@ export default function HomePage() {
                   TAI
                 </h1>
                 <p className="text-xs text-slate-500 uppercase tracking-widest font-medium">
-                  Taiwan American Initiative
+                  Taiwan America Initiative
                 </p>
               </div>
             </button>
@@ -154,7 +154,7 @@ export default function HomePage() {
               Non-Governmental Community Platform
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-slate-900 tracking-tight leading-tight mb-6">
-              Bridging Taiwan & America through bold, people-first diplomacy.
+              Bridging Taiwan & America through bold, people-first collaboration.
             </h1>
             <p className="mt-4 max-w-xl text-lg text-slate-700 leading-relaxed">
               TAI powers a new generation of founders, cultural leaders, and civic
@@ -236,7 +236,7 @@ export default function HomePage() {
               A shared home for cross-border collaboration
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Taiwan American Initiative is a community-powered platform that
+              Taiwan America Initiative is a community-powered platform that
               connects founders, policymakers, and creatives committed to
               democratic resilience. We design programs that strengthen
               connections across Taipei, Silicon Valley, and every city in
@@ -529,7 +529,7 @@ export default function HomePage() {
           </h2>
           <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
             Whether you want to mentor, organize events, or simply stay informed,
-            there is a place for you in the Taiwan American Initiative.
+            there is a place for you in the Taiwan America Initiative.
           </p>
 
           <form className="max-w-md mx-auto mb-8 bg-white/10 p-2 rounded-full backdrop-blur-sm border border-white/20 flex">
@@ -664,7 +664,7 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-            <p>© 2024 Taiwan American Initiative. All rights reserved.</p>
+            <p>© 2024 Taiwan America Initiative. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-slate-900">
                 Privacy Policy

@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Taiwan American Initiative | Bridging Communities",
+  title: "Taiwan America Initiative | Bridging Communities",
   description:
     "A collaborative space for Taiwanese, Taiwanese Americans, and Americans to foster innovation, cultural exchange, and shared democratic values.",
 };
