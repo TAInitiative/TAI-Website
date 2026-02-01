@@ -31,7 +31,7 @@ export default function HomePage() {
               className="flex-shrink-0 flex items-center cursor-pointer text-left"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-              <div className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center text-white mr-3">
+              <div className="w-10 h-10 gradient-pill rounded-lg flex items-center justify-center text-white mr-3">
                 <i className="ph ph-handshake text-2xl"></i>
               </div>
               <div>
@@ -75,7 +75,7 @@ export default function HomePage() {
               >
                 Community
               </a>
-              <button className="bg-slate-900 text-white px-5 py-2.5 rounded-full font-medium hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200">
+              <button className="gradient-pill text-white px-5 py-2.5 rounded-full font-semibold transition-colors shadow-lg shadow-slate-200">
                 Join Initiative
               </button>
             </div>
@@ -135,7 +135,7 @@ export default function HomePage() {
               Community
             </a>
             <div className="pt-4">
-              <button className="w-full bg-slate-900 text-white px-5 py-3 rounded-lg font-medium hover:bg-slate-800 transition-colors">
+              <button className="w-full gradient-pill text-white px-5 py-3 rounded-lg font-semibold transition-colors">
                 Join Initiative
               </button>
             </div>
@@ -143,32 +143,85 @@ export default function HomePage() {
         </div>
       </nav>
 
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-gradient">
-        <div className="absolute inset-0 bg-subtle-pattern opacity-60"></div>
-        <div className="absolute top-20 right-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50 -z-10 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-slate-100 rounded-full blur-3xl opacity-50 -z-10 -translate-x-1/4"></div>
+      <section className="relative pt-32 pb-20 lg:pt-44 lg:pb-32 overflow-hidden hero-gradient">
+        <div className="absolute inset-0 bg-subtle-pattern opacity-50"></div>
+        <div className="absolute top-10 right-0 w-96 h-96 bg-taiwan-blue/10 rounded-full blur-3xl opacity-70 -z-10 translate-x-1/3"></div>
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-taiwan-red/10 rounded-full blur-3xl opacity-70 -z-10 -translate-x-1/4"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <span className="inline-block py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-sm font-semibold mb-6 tracking-wide">
-            Non-Governmental Community Platform
-          </span>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight leading-tight mb-6">
-            Bridging Cultures.<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-slate-900">
-              Building Futures.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
+          <div className="text-left">
+            <span className="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-white text-xs font-semibold uppercase tracking-[0.2em] mb-6 gradient-pill">
+              Non-Governmental Community Platform
             </span>
-          </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-500 leading-relaxed">
-            A collaborative space for Taiwanese, Taiwanese Americans, and Americans
-            to foster innovation, cultural exchange, and shared democratic values.
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <button className="px-8 py-4 rounded-full bg-slate-900 text-white font-medium text-lg hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 flex items-center justify-center gap-2">
-              Start Collaborating <i className="ph ph-arrow-right"></i>
-            </button>
-            <button className="px-8 py-4 rounded-full bg-white text-slate-700 border border-slate-200 font-medium text-lg hover:bg-slate-50 hover:border-slate-300 transition-all flex items-center justify-center">
-              Learn Our Mission
-            </button>
+            <h1 className="text-4xl md:text-6xl font-bold text-slate-900 tracking-tight leading-tight mb-6">
+              Bridging Taiwan & America through bold, people-first diplomacy.
+            </h1>
+            <p className="mt-4 max-w-xl text-lg text-slate-700 leading-relaxed">
+              TAI powers a new generation of founders, cultural leaders, and civic
+              builders by connecting Taipei, the diaspora, and the United States
+              through a shared vision of democratic partnership.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <button className="px-8 py-4 rounded-full text-white font-semibold text-lg transition-all shadow-xl shadow-slate-200 gradient-pill flex items-center justify-center gap-2">
+                Start Collaborating <i className="ph ph-arrow-right"></i>
+              </button>
+              <button className="px-8 py-4 rounded-full bg-white text-slate-700 border border-slate-200 font-semibold text-lg hover:bg-slate-50 hover:border-slate-300 transition-all flex items-center justify-center">
+                Learn Our Mission
+              </button>
+            </div>
+            <div className="mt-10 flex flex-wrap gap-6 text-sm text-slate-600">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-taiwan-blue"></span>
+                <span>People-to-people diplomacy</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-taiwan-red"></span>
+                <span>Innovation & startup exchange</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="glass-panel rounded-3xl p-8 shadow-2xl shadow-slate-200/80">
+              <div className="rounded-2xl bg-hero-sheen p-8 text-white">
+                <div className="flex items-center justify-between mb-6">
+                  <span className="text-sm font-semibold uppercase tracking-[0.2em]">
+                    TAI Impact
+                  </span>
+                  <i className="ph ph-sparkle text-2xl"></i>
+                </div>
+                <h2 className="text-3xl font-bold mb-4">The bridge for modern civic leadership.</h2>
+                <p className="text-sm text-white/80">
+                  Flagship programs for founders, culture makers, and community
+                  organizers committed to the Taiwan-US partnership.
+                </p>
+              </div>
+              <div className="grid gap-4 mt-6 sm:grid-cols-2">
+                <div className="rounded-2xl border border-slate-200 bg-white/90 p-4">
+                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                    Members
+                  </p>
+                  <p className="text-2xl font-semibold text-slate-900 mt-1">4,200+</p>
+                </div>
+                <div className="rounded-2xl border border-slate-200 bg-white/90 p-4">
+                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                    Cities
+                  </p>
+                  <p className="text-2xl font-semibold text-slate-900 mt-1">18</p>
+                </div>
+                <div className="rounded-2xl border border-slate-200 bg-white/90 p-4 sm:col-span-2">
+                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                    Signature Program
+                  </p>
+                  <p className="text-lg font-semibold text-slate-900 mt-1">
+                    Taiwan-US Innovation Sprint
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-white shadow-lg shadow-slate-200 flex items-center justify-center text-taiwan-blue">
+              <i className="ph ph-star-four text-2xl"></i>
+            </div>
           </div>
         </div>
       </section>
@@ -176,10 +229,10 @@ export default function HomePage() {
       <section id="about" className="py-20 bg-white border-t border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-2 items-center">
           <div>
-            <span className="inline-flex items-center gap-2 py-1 px-3 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold uppercase tracking-widest">
+            <span className="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-white text-xs font-semibold uppercase tracking-[0.2em] gradient-pill">
               About TAI
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-4 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-5 mb-4">
               A shared home for cross-border collaboration
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
@@ -191,7 +244,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6">
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 card-hover">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">
                 Cultural Exchange
               </h3>
@@ -200,7 +253,7 @@ export default function HomePage() {
                 Taiwanese heritage and Taiwanese American identity.
               </p>
             </div>
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6">
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 card-hover">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">
                 Policy Dialogue
               </h3>
@@ -226,14 +279,14 @@ export default function HomePage() {
                 level.
               </p>
             </div>
-            <button className="bg-slate-900 text-white px-6 py-3 rounded-full font-medium hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200 w-fit">
+            <button className="gradient-pill text-white px-6 py-3 rounded-full font-semibold transition-colors shadow-lg shadow-slate-200 w-fit">
               Explore Programs
             </button>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             <div className="bg-white border border-slate-100 rounded-2xl p-6 card-hover">
-              <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-4">
-                <i className="ph ph-globe text-2xl text-slate-700"></i>
+              <div className="w-12 h-12 rounded-full bg-taiwan-blue/10 flex items-center justify-center mb-4">
+                <i className="ph ph-globe text-2xl text-taiwan-blue"></i>
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">
                 Global Engagement
@@ -244,8 +297,8 @@ export default function HomePage() {
               </p>
             </div>
             <div className="bg-white border border-slate-100 rounded-2xl p-6 card-hover">
-              <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-4">
-                <i className="ph ph-lightning text-2xl text-slate-700"></i>
+              <div className="w-12 h-12 rounded-full bg-taiwan-red/10 flex items-center justify-center mb-4">
+                <i className="ph ph-lightning text-2xl text-taiwan-red"></i>
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">
                 Innovation & Startups
@@ -256,7 +309,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="bg-white border border-slate-100 rounded-2xl p-6 card-hover">
-              <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center mb-4">
                 <i className="ph ph-users-three text-2xl text-slate-700"></i>
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">
@@ -275,7 +328,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-5 mb-12 lg:mb-0 flex flex-col justify-center">
-              <span className="inline-block py-1 px-3 w-fit rounded-full bg-blue-50 border border-blue-100 text-taiwan-blue text-xs font-bold uppercase tracking-wide mb-6">
+              <span className="inline-flex items-center py-1.5 px-4 w-fit rounded-full text-white text-xs font-bold uppercase tracking-[0.2em] mb-6 gradient-pill">
                 New Initiative
               </span>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
@@ -318,7 +371,7 @@ export default function HomePage() {
               </div>
 
               <div className="mt-10">
-                <button className="bg-slate-900 text-white px-6 py-3 rounded-full font-medium hover:bg-slate-800 transition-colors inline-flex items-center shadow-lg shadow-slate-200">
+                <button className="gradient-pill text-white px-6 py-3 rounded-full font-semibold transition-colors inline-flex items-center shadow-lg shadow-slate-200">
                   Join the Network <i className="ph ph-arrow-right ml-2"></i>
                 </button>
               </div>
@@ -339,11 +392,11 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="sm:col-span-2 bg-slate-900 p-8 rounded-2xl relative overflow-hidden group cursor-pointer transition-transform hover:-translate-y-1">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-slate-800 rounded-full blur-3xl opacity-50 -mr-16 -mt-16"></div>
+                <div className="sm:col-span-2 bg-hero-sheen p-8 rounded-2xl relative overflow-hidden group cursor-pointer transition-transform hover:-translate-y-1">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl opacity-60 -mr-16 -mt-16"></div>
                   <div className="relative z-10">
                     <div className="flex justify-between items-start mb-4">
-                      <div className="bg-white/10 p-3 rounded-lg backdrop-blur-md">
+                      <div className="bg-white/15 p-3 rounded-lg backdrop-blur-md">
                         <i className="ph ph-presentation-chart text-2xl text-white"></i>
                       </div>
                       <i className="ph ph-arrow-up-right text-white opacity-50 text-2xl group-hover:opacity-100 transition-opacity"></i>
@@ -374,17 +427,17 @@ export default function HomePage() {
             </div>
             <a
               href="#"
-              className="hidden md:inline-block text-slate-900 font-medium border-b-2 border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors"
+              className="hidden md:inline-flex items-center gap-2 text-slate-900 font-semibold border-b-2 border-taiwan-red pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors"
             >
-              View All Events
+              View All Events <i className="ph ph-arrow-right"></i>
             </a>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+            <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">
               <div className="bg-slate-100 h-48 flex items-center justify-center relative overflow-hidden">
                 <i className="ph ph-microphone-stage text-6xl text-slate-300"></i>
-                <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-slate-900 shadow-sm">
+                <div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">
                   Hybrid
                 </div>
               </div>
@@ -405,10 +458,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+            <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">
               <div className="bg-slate-100 h-48 flex items-center justify-center relative overflow-hidden">
                 <i className="ph ph-coffee text-6xl text-slate-300"></i>
-                <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-slate-900 shadow-sm">
+                <div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">
                   Taipei
                 </div>
               </div>
@@ -429,10 +482,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+            <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">
               <div className="bg-slate-100 h-48 flex items-center justify-center relative overflow-hidden">
                 <i className="ph ph-monitor-play text-6xl text-slate-300"></i>
-                <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-slate-900 shadow-sm">
+                <div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">
                   Virtual
                 </div>
               </div>
@@ -455,7 +508,7 @@ export default function HomePage() {
           </div>
 
           <div className="mt-8 text-center md:hidden">
-            <a href="#" className="text-slate-900 font-medium border-b-2 border-slate-900 pb-1">
+            <a href="#" className="text-slate-900 font-semibold border-b-2 border-taiwan-red pb-1">
               View All Events
             </a>
           </div>
@@ -464,25 +517,26 @@ export default function HomePage() {
 
       <section
         id="community"
-        className="py-24 bg-slate-900 text-white relative overflow-hidden"
+        className="py-24 text-white relative overflow-hidden"
       >
-        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-white opacity-5 blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-500 opacity-10 blur-3xl"></div>
+        <div className="absolute inset-0 bg-hero-sheen"></div>
+        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-white opacity-10 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-white opacity-10 blur-3xl"></div>
 
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
             Become a part of the network
           </h2>
-          <p className="text-slate-300 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
             Whether you want to mentor, organize events, or simply stay informed,
             there is a place for you in the Taiwan American Initiative.
           </p>
 
-          <form className="max-w-md mx-auto mb-8 bg-white/10 p-2 rounded-full backdrop-blur-sm border border-white/10 flex">
+          <form className="max-w-md mx-auto mb-8 bg-white/10 p-2 rounded-full backdrop-blur-sm border border-white/20 flex">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-1 bg-transparent border-none text-white placeholder-slate-400 px-6 py-3 focus:outline-none rounded-l-full"
+              className="flex-1 bg-transparent border-none text-white placeholder-white/60 px-6 py-3 focus:outline-none rounded-l-full"
               required
             />
             <button
@@ -493,7 +547,7 @@ export default function HomePage() {
               Join
             </button>
           </form>
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-white/70">
             By joining, you agree to our respectful community guidelines.
           </p>
         </div>
@@ -504,7 +558,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
             <div className="col-span-2 lg:col-span-2">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-slate-900 rounded-md flex items-center justify-center text-white mr-2">
+                <div className="w-8 h-8 gradient-pill rounded-md flex items-center justify-center text-white mr-2">
                   <i className="ph ph-handshake text-lg"></i>
                 </div>
                 <span className="font-bold text-xl text-slate-900">TAI</span>
