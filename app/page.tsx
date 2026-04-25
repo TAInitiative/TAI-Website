@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
@@ -31,17 +32,13 @@ export default function HomePage() {
               className="flex-shrink-0 flex items-center cursor-pointer text-left"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-              <div className="w-10 h-10 gradient-pill rounded-lg flex items-center justify-center text-white mr-3">
-                <i className="ph ph-handshake text-2xl"></i>
-              </div>
-              <div>
-                <h1 className="font-bold text-xl text-slate-900 tracking-tight">
-                  TAI
-                </h1>
-                <p className="text-xs text-slate-500 uppercase tracking-widest font-medium">
-                  Taiwan America Initiative
-                </p>
-              </div>
+              <Image
+                src="/tai_nobg.png"
+                alt="Taiwan America Initiative"
+                width={500}
+                height={188}
+                className="h-36 w-auto"
+              />
             </button>
 
             <div className="hidden md:flex space-x-8 items-center">
@@ -532,11 +529,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
             <div className="col-span-2 lg:col-span-2">
-              <div className="flex items-center mb-4">
-                <div className="w-8 h-8 gradient-pill rounded-md flex items-center justify-center text-white mr-2">
-                  <i className="ph ph-handshake text-lg"></i>
-                </div>
-                <span className="font-bold text-xl text-slate-900">TAI</span>
+              <div className="mb-4">
+                <Image
+                  src="/tai_nobg.png"
+                  alt="Taiwan America Initiative"
+                  width={460}
+                  height={173}
+                  className="h-32 w-auto"
+                />
               </div>
               <p className="text-slate-500 text-sm leading-relaxed max-w-xs mb-6">
                 A non-profit dedicated to strengthening the bond between Taiwan and

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Taiwan America Initiative | Bridging Communities",
   description:
     "A collaborative space for Taiwanese, Taiwanese Americans, and Americans to foster innovation, cultural exchange, and shared democratic values.",
+  icons: {
+    icon: "/favitai.png",
+  },
 };
 
 export default function RootLayout({
