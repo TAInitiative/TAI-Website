@@ -29,16 +29,17 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-20">
             <button
               type="button"
-              className="flex-shrink-0 flex items-center cursor-pointer text-left"
+              className="flex-shrink-0 flex items-center gap-3 cursor-pointer text-left"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               <Image
-                src="/tai_nobg.png"
+                src="/favitai.png"
                 alt="Taiwan America Initiative"
-                width={500}
-                height={188}
-                className="h-36 w-auto"
+                width={56}
+                height={56}
+                className="h-14 w-14"
               />
+              <span className="hidden md:block text-base text-slate-600 font-medium">臺美倡議 Taiwan America Initiative</span>
             </button>
 
             <div className="hidden md:flex space-x-8 items-center">
@@ -424,10 +425,10 @@ export default function HomePage() {
                   className="h-32 w-auto"
                 />
               </div>
-              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mb-6">
-                A nonprofit advancing Taiwan-U.S. relations through cultural and
-                linguistic exchange and technology co-development.
-              </p>
+              <div className="text-slate-500 text-sm mb-6 space-y-1">
+                <p className="flex items-center gap-1.5"><i className="ph ph-map-pin"></i> Washington D.C., United States</p>
+                <p className="flex items-center gap-1.5"><i className="ph ph-map-pin"></i> Taipei, Taiwan</p>
+              </div>
               <div className="flex space-x-4">
                 <a href="https://facebook.com/tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI Facebook">
                   <i className="ph-fill ph-facebook-logo text-2xl"></i>
@@ -441,6 +442,12 @@ export default function HomePage() {
                 <a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI Discord">
                   <i className="ph-fill ph-discord-logo text-2xl"></i>
                 </a>
+                <a href="https://linkedin.com/company/tainitiative" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI LinkedIn">
+                  <i className="ph-fill ph-linkedin-logo text-2xl"></i>
+                </a>
+                <a href="https://github.com/TAInitiative" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI GitHub">
+                  <i className="ph-fill ph-github-logo text-2xl"></i>
+                </a>
               </div>
             </div>
 
@@ -448,13 +455,13 @@ export default function HomePage() {
               <h4 className="font-bold text-slate-900 mb-4">Programs</h4>
               <ul className="space-y-2 text-sm text-slate-600">
                 <li>
-                  <a href="https://tai.org.tw/taf" className="hover:text-slate-900">TAF — Truth Alliance Fellowship</a>
+                  <a href="https://tai.org.tw/taf" className="hover:text-slate-900 flex items-center gap-1.5"><i className="ph ph-cross"></i> TAF — Truth Alliance Fellowship</a>
                 </li>
                 <li>
-                  <a href="https://tai.org.tw/taba" className="hover:text-slate-900">TABA — Business Accelerator</a>
+                  <a href="https://tai.org.tw/taba" className="hover:text-slate-900 flex items-center gap-1.5"><i className="ph ph-rocket-launch"></i> TABA — Business Accelerator</a>
                 </li>
                 <li>
-                  <a href="https://tai.org.tw/talec" className="hover:text-slate-900">TALEC — Language & Culture</a>
+                  <a href="https://tai.org.tw/talec" className="hover:text-slate-900 flex items-center gap-1.5"><i className="ph ph-book-open"></i> TALEC — Language & Culture</a>
                 </li>
               </ul>
             </div>
