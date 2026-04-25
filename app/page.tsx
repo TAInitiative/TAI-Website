@@ -48,9 +48,6 @@ export default function HomePage() {
               <a href="#programs" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">
                 Programs
               </a>
-              <a href="#taba" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">
-                TABA
-              </a>
               <a href="#events" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">
                 Events
               </a>
@@ -86,9 +83,6 @@ export default function HomePage() {
             </a>
             <a href="#programs" className="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50" onClick={() => setMobileMenuOpen(false)}>
               Programs
-            </a>
-            <a href="#taba" className="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50" onClick={() => setMobileMenuOpen(false)}>
-              TABA
             </a>
             <a href="#events" className="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50" onClick={() => setMobileMenuOpen(false)}>
               Events
@@ -278,117 +272,6 @@ export default function HomePage() {
                 Taiwan and the United States.
               </p>
             </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="taba" className="py-24 bg-white border-t border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-16">
-            <div className="lg:col-span-5 mb-12 lg:mb-0 flex flex-col justify-center">
-              <span className="inline-flex items-center py-1.5 px-4 w-fit rounded-full text-white text-xs font-bold uppercase tracking-[0.2em] mb-6 gradient-pill">
-                Business Accelerator
-              </span>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                Taiwan-America Business Accelerator
-              </h2>
-              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                TABA is built for entrepreneurs who operate across the Taiwan-U.S.
-                corridor. Whether you are a Taiwanese startup expanding West or a U.S.
-                founder building in Taipei, TABA gives you the connections and
-                resources to grow.
-              </p>
-
-              <div className="space-y-6 mt-4">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center">
-                    <i className="ph ph-users text-2xl text-slate-700"></i>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-900">
-                      Founder-to-Founder Mentorship
-                    </h4>
-                    <p className="text-sm text-slate-600 mt-1">
-                      Direct access to founders who have successfully navigated
-                      cross-border challenges between Taiwan and the U.S.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center">
-                    <i className="ph ph-trend-up text-2xl text-slate-700"></i>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-900">Investor Network</h4>
-                    <p className="text-sm text-slate-600 mt-1">
-                      Introductions to angels and VCs with a specific interest in
-                      Taiwan-U.S. business synergies.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center">
-                    <i className="ph ph-handshake text-2xl text-slate-700"></i>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-900">Cross-Border Partnerships</h4>
-                    <p className="text-sm text-slate-600 mt-1">
-                      Facilitated introductions to strategic partners, distributors,
-                      and collaborators on both sides of the Pacific.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-10">
-                <a href="https://tai.org.tw/taba" className="gradient-pill text-white px-6 py-3 rounded-full font-semibold transition-colors inline-flex items-center shadow-lg shadow-slate-200">
-                  Learn About TABA <i className="ph ph-arrow-right ml-2"></i>
-                </a>
-              </div>
-            </div>
-
-            <div className="lg:col-span-7">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-slate-50 border border-slate-100 p-6 rounded-2xl card-hover">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-                    <i className="ph ph-globe text-xl text-taiwan-blue"></i>
-                  </div>
-                  <h4 className="font-bold text-slate-900 mb-2">Market Entry Support</h4>
-                  <p className="text-sm text-slate-600">
-                    Guidance on regulatory, cultural, and operational considerations
-                    when entering either market.
-                  </p>
-                </div>
-                <div className="bg-slate-50 border border-slate-100 p-6 rounded-2xl card-hover">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm mb-4">
-                    <i className="ph ph-lightning text-xl text-taiwan-red"></i>
-                  </div>
-                  <h4 className="font-bold text-slate-900 mb-2">Tech Co-Development</h4>
-                  <p className="text-sm text-slate-600">
-                    Connecting U.S. product teams with Taiwanese engineering talent
-                    for joint development initiatives.
-                  </p>
-                </div>
-                <div className="sm:col-span-2 bg-hero-sheen p-8 rounded-2xl relative overflow-hidden group cursor-pointer transition-transform hover:-translate-y-1">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl opacity-60 -mr-16 -mt-16"></div>
-                  <div className="relative z-10">
-                    <div className="flex justify-between items-start mb-4">
-                      <div className="bg-white/15 p-3 rounded-lg backdrop-blur-md">
-                        <i className="ph ph-presentation-chart text-2xl text-white"></i>
-                      </div>
-                      <i className="ph ph-arrow-up-right text-white opacity-50 text-2xl group-hover:opacity-100 transition-opacity"></i>
-                    </div>
-                    <h4 className="text-xl font-bold text-white mb-2">
-                      Annual Pitch Competition
-                    </h4>
-                    <p className="text-slate-300 text-sm">
-                      Each year TABA hosts a cross-border demo day connecting
-                      Taiwan-U.S. startups with investors and partners.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
