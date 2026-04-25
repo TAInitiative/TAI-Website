@@ -131,16 +131,6 @@ export default function HomePage() {
                 Learn Our Mission
               </a>
             </div>
-            <div className="mt-10 flex flex-wrap gap-6 text-sm text-slate-600">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-taiwan-blue"></span>
-                <span>Cultural & Linguistic Exchange</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-taiwan-red"></span>
-                <span>Technology Co-Development</span>
-              </div>
-            </div>
           </div>
 
           <div className="relative">
