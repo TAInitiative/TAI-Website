@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Script from "next/script";
+import { LanguageProvider } from "./LanguageContext";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -61,7 +62,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans text-slate-700 bg-slate-50 antialiased selection:bg-blue-100 selection:text-blue-900">
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );
