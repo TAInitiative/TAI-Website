@@ -216,15 +216,15 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">
-              <div className="bg-slate-100 h-48 flex items-center justify-center relative overflow-hidden"><i className="ph ph-hands-praying text-6xl text-slate-300"></i><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TAF</div></div>
+              <div className="relative h-48 overflow-hidden"><Image src="/taf.png" alt="TAF Fellowship Meal" fill className="object-cover" /><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TAF</div></div>
               <div className="p-6"><h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">{t.tafEventTitle}</h3><p className="text-slate-600 text-sm mb-4">{t.tafEventBody}</p><a href="https://tai.org.tw/taf" className="text-sm font-semibold text-slate-900 flex items-center">{t.learnMore} <i className="ph ph-caret-right ml-1"></i></a></div>
             </div>
             <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">
-              <div className="bg-slate-100 h-48 flex items-center justify-center relative overflow-hidden"><i className="ph ph-rocket-launch text-6xl text-slate-300"></i><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TABA</div></div>
+              <div className="relative h-48 overflow-hidden"><Image src="/taba-founder-meetup.png" alt="TABA Founder Meetup" fill className="object-cover" /><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TABA</div></div>
               <div className="p-6"><h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">{t.tabaEventTitle}</h3><p className="text-slate-600 text-sm mb-4">{t.tabaEventBody}</p><a href="https://tai.org.tw/taba" className="text-sm font-semibold text-slate-900 flex items-center">{t.learnMore} <i className="ph ph-caret-right ml-1"></i></a></div>
             </div>
             <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">
-              <div className="bg-slate-100 h-48 flex items-center justify-center relative overflow-hidden"><i className="ph ph-book-open text-6xl text-slate-300"></i><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TALEC</div></div>
+              <div className="relative h-48 overflow-hidden"><Image src="/talec.png" alt="TALEC Language & Culture" fill className="object-cover" /><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TALEC</div></div>
               <div className="p-6"><h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">{t.talecEventTitle}</h3><p className="text-slate-600 text-sm mb-4">{t.talecEventBody}</p><a href="https://tai.org.tw/talec" className="text-sm font-semibold text-slate-900 flex items-center">{t.learnMore} <i className="ph ph-caret-right ml-1"></i></a></div>
             </div>
           </div>
