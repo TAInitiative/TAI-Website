@@ -229,9 +229,10 @@ export default function HomePage() {
           <span className="inline-block py-1 px-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold uppercase tracking-widest mb-6">{t.ctaBadge}</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">{t.ctaTitle}</h2>
           <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">{t.ctaBody}</p>
-          <form className="max-w-lg mx-auto mb-8 bg-white/10 p-2 rounded-full backdrop-blur-xl border border-white/20 flex shadow-2xl shadow-blue-900/20">
-            <input type="email" placeholder={t.emailPlaceholder} className="flex-1 bg-transparent border-none text-white placeholder-white/60 px-6 py-3 focus:outline-none rounded-l-full" required />
-            <button type="button" onClick={() => alert(language === "en" ? "Thank you for joining! We will be in touch shortly." : "感謝您加入！我們將盡快與您聯繫。")} className="bg-white text-slate-900 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition-colors shadow-lg">{t.joinNow}</button>
+          <form action="https://tai.us18.list-manage.com/subscribe/post?u=2b9d4e6fc301528a48a7e8474&amp;id=332c8077f8&amp;f_id=0084ace6f0" method="post" target="_blank" className="max-w-lg mx-auto mb-8 bg-white/10 p-2 rounded-full backdrop-blur-xl border border-white/20 flex shadow-2xl shadow-blue-900/20">
+            <input type="email" name="EMAIL" placeholder={t.emailPlaceholder} className="flex-1 bg-transparent border-none text-white placeholder-white/60 px-6 py-3 focus:outline-none rounded-l-full" required />
+            <div aria-hidden="true" style={{position: "absolute", left: "-5000px"}}><input type="text" name="b_2b9d4e6fc301528a48a7e8474_332c8077f8" tabIndex={-1} defaultValue="" /></div>
+            <button type="submit" className="bg-white text-slate-900 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition-colors shadow-lg">{t.joinNow}</button>
           </form>
           <p className="text-xs text-white/60">{t.noSpam}</p>
         </div>
@@ -274,7 +275,7 @@ export default function HomePage() {
             <div>
               <h4 className="font-bold text-slate-900 mb-4">{t.footerContact}</h4>
               <ul className="space-y-2 text-sm text-slate-600">
-                <li><a href="mailto:contact@tai.org.tw" className="hover:text-slate-900">contact@tai.org.tw</a></li>
+                <li><a href="mailto:contact@tai.org.tw" className="hover:text-slate-900 flex items-center gap-1.5"><i className="ph ph-envelope"></i> contact@tai.org.tw</a></li>
               </ul>
             </div>
           </div>
