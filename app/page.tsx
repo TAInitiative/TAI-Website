@@ -284,8 +284,7 @@ export default function HomePage() {
             <div>
               <h4 className="font-bold text-slate-900 mb-4">{t.footerContact}</h4>
               <ul className="space-y-2 text-sm text-slate-600">
-                <li><a href="mailto:partnerships@tai.org.tw" className="hover:text-slate-900">partnerships@tai.org.tw</a></li>
-                <li><a href="mailto:press@tai.org.tw" className="hover:text-slate-900">press@tai.org.tw</a></li>
+                <li><a href="mailto:contact@tai.org.tw" className="hover:text-slate-900">contact@tai.org.tw</a></li>
               </ul>
             </div>
           </div>
