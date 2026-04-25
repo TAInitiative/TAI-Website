@@ -119,16 +119,9 @@ export default function TALECPage() {
             </div>
           </div>
           <div className="relative">
-            <div className="glass-panel rounded-3xl p-8 shadow-2xl shadow-slate-200/80">
-              <div className="rounded-2xl bg-hero-sheen p-8 text-white">
-                <div className="flex items-center justify-between mb-6"><span className="text-sm font-semibold uppercase tracking-[0.2em]">{t.heroCardLabel}</span><i className="ph ph-book-open text-2xl"></i></div>
-                <h2 className="text-3xl font-bold mb-4">{t.heroCardTitle}</h2>
-                <p className="text-sm text-white/80 mb-6">{t.heroCardBody}</p>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-2.5 backdrop-blur-md"><i className="ph ph-translate text-lg"></i><span className="text-sm font-semibold">{t.heroItem1}</span></div>
-                  <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-2.5 backdrop-blur-md"><i className="ph ph-student text-lg"></i><span className="text-sm font-semibold">{t.heroItem2}</span></div>
-                  <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-2.5 backdrop-blur-md"><i className="ph ph-music-notes text-lg"></i><span className="text-sm font-semibold">{t.heroItem3}</span></div>
-                </div>
+            <div className="glass-panel rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/80">
+              <div className="relative w-full aspect-square">
+                <Image src="/talec.png" alt="TALEC Language & Culture" fill className="object-cover" />
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-white shadow-lg shadow-slate-200 flex items-center justify-center text-taiwan-blue"><i className="ph ph-book-open text-2xl"></i></div>
