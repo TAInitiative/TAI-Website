@@ -57,9 +57,9 @@ export default function HomePage() {
               <a href="#community" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">
                 Community
               </a>
-              <button className="gradient-pill text-white px-5 py-2.5 rounded-full font-semibold transition-colors shadow-lg shadow-slate-200">
+              <a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="gradient-pill text-white px-5 py-2.5 rounded-full font-semibold transition-colors shadow-lg shadow-slate-200">
                 Get Involved
-              </button>
+              </a>
             </div>
 
             <div className="md:hidden flex items-center">
@@ -97,9 +97,9 @@ export default function HomePage() {
               Community
             </a>
             <div className="pt-4">
-              <button className="w-full gradient-pill text-white px-5 py-3 rounded-lg font-semibold transition-colors">
+              <a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="block w-full text-center gradient-pill text-white px-5 py-3 rounded-lg font-semibold transition-colors">
                 Get Involved
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -565,6 +565,9 @@ export default function HomePage() {
                 <a href="https://www.threads.com/@tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI Threads">
                   <i className="ph-fill ph-threads-logo text-2xl"></i>
                 </a>
+                <a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI Discord">
+                  <i className="ph-fill ph-discord-logo text-2xl"></i>
+                </a>
               </div>
             </div>
 
@@ -617,7 +620,7 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-            <p>© 2025 Taiwan America Initiative. All rights reserved.</p>
+            <p>© 2026 Taiwan America Initiative. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-slate-900">Privacy Policy</a>
               <a href="#" className="hover:text-slate-900">Terms of Service</a>
