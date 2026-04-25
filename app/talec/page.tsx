@@ -29,7 +29,7 @@ const translations = {
     ctaBadge: "Join TALEC", ctaTitle: "Ready to deepen your cross-cultural understanding?",
     ctaBody: "Whether you want to learn Mandarin, share your culture, or simply connect with people across the Taiwan-U.S. divide — TALEC has a place for you. Join our community on Discord to get started.",
     ctaBtn1: "Join on Discord", ctaBtn2: "Follow Us",
-    footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group",
+    footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group",
     footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative. All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
     tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
@@ -58,7 +58,7 @@ const translations = {
     ctaBadge: "加入 TALEC", ctaTitle: "準備好深化您的跨文化理解了嗎？",
     ctaBody: "無論您想學習普通話、分享您的文化，或只是與臺美雙方的人建立連結——TALEC 都有屬於您的位置。在 Discord 上加入我們的社群開始吧。",
     ctaBtn1: "加入 Discord", ctaBtn2: "追蹤我們",
-    footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團",
+    footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團",
     footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
     tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
@@ -182,13 +182,14 @@ export default function TALECPage() {
       <footer className="bg-white border-t border-slate-100 pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-            <div className="col-span-2">
-              <div className="mb-4"><Image src="/tai_nobg.png" alt="Taiwan America Initiative" width={460} height={173} className="h-32 w-auto" /></div>
+            <div>
+              <h4 className="font-bold text-slate-900 mb-4">{t.footerLocations}</h4>
               <div className="text-slate-500 text-sm mb-6 space-y-1">
                 <p className="flex items-center gap-1.5"><i className="ph ph-map-pin"></i> {t.locationUS}</p>
                 <p className="flex items-center gap-1.5"><i className="ph ph-map-pin"></i> {t.locationTW}</p>
               </div>
-              <div className="flex space-x-4">
+              <div className="mb-4"><Image src="/tai_nobg.png" alt="Taiwan America Initiative" width={460} height={173} className="h-36 w-auto" /></div>
+              <div className="flex flex-wrap gap-3">
                 <a href="https://facebook.com/tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors"><i className="ph-fill ph-facebook-logo text-2xl"></i></a>
                 <a href="https://www.instagram.com/tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors"><i className="ph-fill ph-instagram-logo text-2xl"></i></a>
                 <a href="https://www.threads.com/@tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors"><i className="ph-fill ph-threads-logo text-2xl"></i></a>
