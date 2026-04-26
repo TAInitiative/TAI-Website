@@ -33,7 +33,7 @@ const translations = {
     ctaBody: "Whether through faith, business, or cultural exchange — there is a place for you in TAI. Stay connected with our latest events, programs, and opportunities.",
     emailPlaceholder: "Enter your email address", joinNow: "Join Now", noSpam: "No spam, ever. Unsubscribe at any time.",
     footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group", footerContact: "Contact",
-    footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative. All rights reserved.",
+    footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative (to be registered). All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
     tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
   },
@@ -65,7 +65,7 @@ const translations = {
     ctaBody: "無論是透過信仰、商業或文化交流——TAI 都有屬於您的位置。掌握我們最新的活動、計畫與機會。",
     emailPlaceholder: "輸入您的電子郵件", joinNow: "立即加入", noSpam: "絕不發送垃圾郵件。隨時可取消訂閱。",
     footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團", footerContact: "聯絡我們",
-    footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議。保留所有權利。",
+    footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議（籌備中）。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
     tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
   },
@@ -281,10 +281,6 @@ export default function HomePage() {
           </div>
           <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
             <p>{t.footerCopyright}</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-slate-900">{t.footerPrivacy}</a>
-              <a href="#" className="hover:text-slate-900">{t.footerTerms}</a>
-            </div>
           </div>
         </div>
       </footer>

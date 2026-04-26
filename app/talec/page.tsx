@@ -30,7 +30,7 @@ const translations = {
     ctaBody: "Whether you want to learn Mandarin, share your culture, or simply connect with people across the Taiwan-U.S. divide — TALEC has a place for you. Join our community on Discord to get started.",
     ctaBtn1: "Join on Discord", ctaBtn2: "Follow Us",
     footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group",
-    footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative. All rights reserved.",
+    footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative (to be registered). All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
     tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
   },
@@ -59,7 +59,7 @@ const translations = {
     ctaBody: "無論您想學習普通話、分享您的文化，或只是與臺美雙方的人建立連結——TALEC 都有屬於您的位置。在 Discord 上加入我們的社群開始吧。",
     ctaBtn1: "加入 Discord", ctaBtn2: "追蹤我們",
     footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團",
-    footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議。保留所有權利。",
+    footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議（籌備中）。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
     tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
   },
@@ -209,10 +209,6 @@ export default function TALECPage() {
           </div>
           <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
             <p>{t.footerCopyright}</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-slate-900">{t.footerPrivacy}</a>
-              <a href="#" className="hover:text-slate-900">{t.footerTerms}</a>
-            </div>
           </div>
         </div>
       </footer>

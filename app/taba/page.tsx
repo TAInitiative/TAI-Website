@@ -36,7 +36,7 @@ const translations = {
     ctaBody: "Join our community on Discord to connect with the TABA team, get updates on upcoming cohorts, and meet other cross-border founders.",
     ctaBtn: "Join on Discord",
     footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group",
-    footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative. All rights reserved.",
+    footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative (to be registered). All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
     tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
   },
@@ -71,7 +71,7 @@ const translations = {
     ctaBody: "在 Discord 上加入我們的社群，與 TABA 團隊連結、掌握即將推出的計畫資訊，並認識其他跨境創業者。",
     ctaBtn: "加入 Discord",
     footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團",
-    footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議。保留所有權利。",
+    footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議（籌備中）。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
     tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
   },
@@ -246,10 +246,6 @@ export default function TABAPage() {
           </div>
           <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
             <p>{t.footerCopyright}</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-slate-900">{t.footerPrivacy}</a>
-              <a href="#" className="hover:text-slate-900">{t.footerTerms}</a>
-            </div>
           </div>
         </div>
       </footer>

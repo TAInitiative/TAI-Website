@@ -30,7 +30,7 @@ const translations = {
     ctaBody: "Join the TAF community on Facebook and Instagram to stay connected with upcoming gatherings, meals, and prayer sessions.",
     ctaBtn1: "Join on Facebook", ctaBtn2: "Follow on Instagram",
     footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group",
-    footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative. All rights reserved.",
+    footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative (to be registered). All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
     tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
   },
@@ -59,7 +59,7 @@ const translations = {
     ctaBody: "在 Facebook 和 Instagram 上加入 TAF 社群，掌握最新的聚餐、禱告聚會等活動資訊。",
     ctaBtn1: "加入 Facebook 社團", ctaBtn2: "追蹤 Instagram",
     footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團",
-    footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議。保留所有權利。",
+    footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議（籌備中）。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
     tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
   },
@@ -212,10 +212,6 @@ export default function TAFPage() {
           </div>
           <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
             <p>{t.footerCopyright}</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-slate-900">{t.footerPrivacy}</a>
-              <a href="#" className="hover:text-slate-900">{t.footerTerms}</a>
-            </div>
           </div>
         </div>
       </footer>
