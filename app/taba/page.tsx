@@ -244,7 +244,7 @@ export default function TABAPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+          <div className="border-t border-slate-100 pt-8 text-center text-sm text-slate-500">
             <p>{t.footerCopyright}</p>
           </div>
         </div>
