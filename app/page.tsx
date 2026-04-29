@@ -6,7 +6,7 @@ import { useLanguage } from "./LanguageContext";
 
 const translations = {
   en: {
-    navAbout: "About", navPrograms: "Programs", navEvents: "Events", navCommunity: "Community", navGetInvolved: "Get Involved",
+    navAbout: "About", navPrograms: "Programs", navEvents: "Events", navCommunity: "Community", navStaff: "Staff", navGetInvolved: "Get Involved",
     heroBadge: "Nonprofit · Taiwan-U.S. Partnership",
     heroTitle: "Advancing Taiwan-America relations through culture, language, and technology.",
     heroBody: "TAI is a nonprofit dedicated to deepening the bond between Taiwan and the United States through three flagship programs spanning faith & community, business acceleration, and cultural & linguistic exchange.",
@@ -32,13 +32,13 @@ const translations = {
     ctaBadge: "Get Involved", ctaTitle: "Ready to be part of the Taiwan-America community?",
     ctaBody: "Whether through faith, business, or cultural exchange — there is a place for you in TAI. Stay connected with our latest events, programs, and opportunities.",
     emailPlaceholder: "Enter your email address", joinNow: "Join Now", noSpam: "No spam, ever. Unsubscribe at any time.",
-    footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group", footerContact: "Contact",
+    footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group", footerContact: "Contact", footerStaff: "Staff",
     footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative (to be registered). All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
     tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
   },
   zh: {
-    navAbout: "關於我們", navPrograms: "計畫項目", navEvents: "活動", navCommunity: "社群", navGetInvolved: "加入我們",
+    navAbout: "關於我們", navPrograms: "計畫項目", navEvents: "活動", navCommunity: "社群", navStaff: "團隊", navGetInvolved: "加入我們",
     heroBadge: "非營利組織 · 臺美夥伴關係",
     heroTitle: "透過文化、語言與科技，推進臺美關係。",
     heroBody: "臺美倡議（TAI）是一個非營利組織，致力於透過三項旗艦計畫深化臺灣與美國之間的連結，涵蓋信仰社群、商業加速與文化語言交流。",
@@ -64,7 +64,7 @@ const translations = {
     ctaBadge: "加入我們", ctaTitle: "準備好成為臺美社群的一份子了嗎？",
     ctaBody: "無論是透過信仰、商業或文化交流——TAI 都有屬於您的位置。掌握我們最新的活動、計畫與機會。",
     emailPlaceholder: "輸入您的電子郵件", joinNow: "立即加入", noSpam: "絕不發送垃圾郵件。隨時可取消訂閱。",
-    footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團", footerContact: "聯絡我們",
+    footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團", footerContact: "聯絡我們", footerStaff: "團隊成員",
     footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議（籌備中）。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
     tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
@@ -99,6 +99,7 @@ export default function HomePage() {
               <a href="#programs" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">{t.navPrograms}</a>
               <a href="#events" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">{t.navEvents}</a>
               <a href="#community" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">{t.navCommunity}</a>
+              <a href="/staff" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">{t.navStaff}</a>
               <a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="gradient-pill text-white px-5 py-2.5 rounded-full font-semibold transition-colors shadow-lg shadow-slate-200">{t.navGetInvolved}</a>
               <button onClick={toggle} className="border border-slate-300 hover:border-slate-400 text-slate-600 hover:text-slate-900 px-3 py-1.5 rounded-full font-medium transition-colors text-sm">
                 {language === "en" ? "中文" : "EN"}
@@ -122,6 +123,7 @@ export default function HomePage() {
             <a href="#programs" className="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50" onClick={() => setMobileMenuOpen(false)}>{t.navPrograms}</a>
             <a href="#events" className="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50" onClick={() => setMobileMenuOpen(false)}>{t.navEvents}</a>
             <a href="#community" className="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50" onClick={() => setMobileMenuOpen(false)}>{t.navCommunity}</a>
+            <a href="/staff" className="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50" onClick={() => setMobileMenuOpen(false)}>{t.navStaff}</a>
             <div className="pt-4">
               <a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="block w-full text-center gradient-pill text-white px-5 py-3 rounded-lg font-semibold transition-colors">{t.navGetInvolved}</a>
             </div>
@@ -247,15 +249,6 @@ export default function HomePage() {
                 <p className="flex items-center gap-1.5"><i className="ph ph-map-pin"></i> {t.locationUS}</p>
                 <p className="flex items-center gap-1.5"><i className="ph ph-map-pin"></i> {t.locationTW}</p>
               </div>
-              <div className="mb-4"><Image src="/tai_nobg.png" alt="Taiwan America Initiative" width={460} height={173} className="h-36 w-auto" /></div>
-              <div className="flex flex-wrap gap-3">
-                <a href="https://facebook.com/tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI Facebook"><i className="ph-fill ph-facebook-logo text-2xl"></i></a>
-                <a href="https://www.instagram.com/tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI Instagram"><i className="ph-fill ph-instagram-logo text-2xl"></i></a>
-                <a href="https://www.threads.com/@tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI Threads"><i className="ph-fill ph-threads-logo text-2xl"></i></a>
-                <a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI Discord"><i className="ph-fill ph-discord-logo text-2xl"></i></a>
-                <a href="https://linkedin.com/company/tainitiative" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI LinkedIn"><i className="ph-fill ph-linkedin-logo text-2xl"></i></a>
-                <a href="https://github.com/TAInitiative" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors" aria-label="TAI GitHub"><i className="ph-fill ph-github-logo text-2xl"></i></a>
-              </div>
             </div>
             <div>
               <h4 className="font-bold text-slate-900 mb-4">{t.footerPrograms}</h4>
@@ -276,7 +269,19 @@ export default function HomePage() {
               <h4 className="font-bold text-slate-900 mb-4">{t.footerContact}</h4>
               <ul className="space-y-2 text-sm text-slate-600">
                 <li><a href="mailto:contact@tai.org.tw" className="hover:text-slate-900 flex items-center gap-1.5"><i className="ph ph-envelope"></i> contact@tai.org.tw</a></li>
+                <li><a href="/staff" className="hover:text-slate-900 flex items-center gap-1.5"><i className="ph ph-users"></i> {t.footerStaff}</a></li>
               </ul>
+            </div>
+          </div>
+          <div className="border-t border-slate-100 pt-10 pb-6 flex flex-col items-center gap-4">
+            <Image src="/tai_nobg.png" alt="Taiwan America Initiative" width={460} height={173} className="h-36 w-auto" />
+            <div className="flex flex-wrap gap-3 justify-center">
+              <a href="https://facebook.com/tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors"><i className="ph-fill ph-facebook-logo text-2xl"></i></a>
+              <a href="https://www.instagram.com/tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors"><i className="ph-fill ph-instagram-logo text-2xl"></i></a>
+              <a href="https://www.threads.com/@tai.org.tw" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors"><i className="ph-fill ph-threads-logo text-2xl"></i></a>
+              <a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors"><i className="ph-fill ph-discord-logo text-2xl"></i></a>
+              <a href="https://linkedin.com/company/tainitiative" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors"><i className="ph-fill ph-linkedin-logo text-2xl"></i></a>
+              <a href="https://github.com/TAInitiative" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors"><i className="ph-fill ph-github-logo text-2xl"></i></a>
             </div>
           </div>
           <div className="border-t border-slate-100 pt-8 text-center text-sm text-slate-500">
