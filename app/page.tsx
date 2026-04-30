@@ -162,10 +162,10 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-5 mb-4">{t.aboutTitle}</h2>
             <p className="text-lg text-slate-600 leading-relaxed">{t.aboutBody}</p>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 card-hover"><h3 className="text-xl font-semibold text-slate-900 mb-2">{t.card1Title}</h3><p className="text-sm text-slate-600">{t.card1Body}</p></div>
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 card-hover"><h3 className="text-xl font-semibold text-slate-900 mb-2">{t.card2Title}</h3><p className="text-sm text-slate-600">{t.card2Body}</p></div>
-            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 card-hover sm:col-span-2"><h3 className="text-xl font-semibold text-slate-900 mb-2">{t.card3Title}</h3><p className="text-sm text-slate-600">{t.card3Body}</p></div>
+          <div className="grid gap-6">
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 card-hover"><i className="ph ph-cross text-2xl text-taiwan-blue mb-3 block"></i><h3 className="text-xl font-semibold text-slate-900 mb-2">{t.card1Title}</h3><p className="text-sm text-slate-600">{t.card1Body}</p></div>
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 card-hover"><i className="ph ph-rocket-launch text-2xl text-taiwan-red mb-3 block"></i><h3 className="text-xl font-semibold text-slate-900 mb-2">{t.card2Title}</h3><p className="text-sm text-slate-600">{t.card2Body}</p></div>
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 card-hover"><i className="ph ph-book-open text-2xl text-slate-700 mb-3 block"></i><h3 className="text-xl font-semibold text-slate-900 mb-2">{t.card3Title}</h3><p className="text-sm text-slate-600">{t.card3Body}</p></div>
           </div>
         </div>
       </section>
