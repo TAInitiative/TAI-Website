@@ -17,6 +17,10 @@ const translations = {
     mark_fullname: "Hao-Yuan Chen",
     mark_role: "Co-Founder & President",
     mark_bio: "Mark is the co-founder and president of the Taiwan America Initiative. He leads the organization's day-to-day operations and strategic direction, driving TAI's mission forward across all three programs.",
+    bernadette_name: "Bernadette Harding",
+    bernadette_fullname: "Bernie Harding",
+    bernadette_role: "Co-Founding Associate",
+    bernadette_bio: "Bernadette is a co-founding associate of the Taiwan America Initiative, contributing to the foundation and growth of TAI's mission to strengthen Taiwan-U.S. relations.",
     ctaBadge: "Get Involved", ctaTitle: "Join the Taiwan-America community",
     ctaBody: "Whether through faith, business, or cultural exchange — there is a place for you in TAI.",
     ctaBtn: "Join on Discord",
@@ -37,6 +41,10 @@ const translations = {
     mark_fullname: "陳皓圓",
     mark_role: "共同創辦人暨理事長",
     mark_bio: "Mark 是臺美倡議的共同創辦人暨理事長，負責組織的日常運營與戰略方向，推動 TAI 三大計畫的使命向前邁進。",
+    bernadette_name: "Bernadette Harding",
+    bernadette_fullname: "華伯尼",
+    bernadette_role: "共同創始夥伴",
+    bernadette_bio: "Bernadette 是臺美倡議的共同創始夥伴，為 TAI 強化臺美關係使命的奠基與發展做出重要貢獻。",
     ctaBadge: "加入我們", ctaTitle: "加入臺美社群",
     ctaBody: "無論是透過信仰、商業或文化交流——TAI 都有屬於您的位置。",
     ctaBtn: "加入 Discord",
@@ -67,6 +75,16 @@ const staff = [
     linkedin: "https://www.linkedin.com/in/mark-chen-next/",
     accentClass: "bg-taiwan-red/10",
     iconColor: "text-taiwan-red",
+  },
+  {
+    nameKey: "bernadette_name" as const,
+    fullnameKey: "bernadette_fullname" as const,
+    roleKey: "bernadette_role" as const,
+    bioKey: "bernadette_bio" as const,
+    photo: "/bernadette.jpg",
+    linkedin: "https://www.linkedin.com/in/bernadette-harding-8769025/",
+    accentClass: "bg-slate-100",
+    iconColor: "text-slate-700",
   },
 ];
 
@@ -119,7 +137,7 @@ export default function StaffPage() {
             <p className="text-slate-600 max-w-xl mx-auto">{t.staffBody}</p>
           </div>
 
-          <div className="grid gap-10 md:grid-cols-2 max-w-2xl mx-auto">
+          <div className="grid gap-10 md:grid-cols-3 max-w-5xl mx-auto">
             {staff.map((member) => (
               <div key={member.nameKey} className="bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm card-hover flex flex-col">
                 <div className={`relative w-full aspect-square ${member.accentClass}`}>
@@ -141,9 +159,11 @@ export default function StaffPage() {
                     </span>
                   </div>
                   <p className="text-slate-600 leading-relaxed text-sm flex-1">{t[member.bioKey]}</p>
-                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className={`mt-6 inline-flex items-center gap-2 text-sm font-semibold ${member.iconColor} hover:opacity-70 transition-opacity`}>
-                    <i className="ph-fill ph-linkedin-logo text-lg"></i> LinkedIn
-                  </a>
+                  {member.linkedin && (
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className={`mt-6 inline-flex items-center gap-2 text-sm font-semibold ${member.iconColor} hover:opacity-70 transition-opacity`}>
+                      <i className="ph-fill ph-linkedin-logo text-lg"></i> LinkedIn
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
