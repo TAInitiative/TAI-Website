@@ -20,6 +20,10 @@ const translations = {
     aboutBody2: "TAF gatherings are bilingual (English and Mandarin) and open to Taiwanese, Taiwanese Americans, Americans, and international friends. Whether you are new to Taiwan, studying abroad, or simply looking for a cross-cultural faith community, TAF is your home.",
     statMembersLabel: "Members", statMeetingsLabel: "Meetings Held", statSinceLabel: "Founded",
     growthBody: "Since launching in May 2026, TAF has grown to about 20 members through 10 gatherings — with members from Chesterbrook Taiwanese Presbyterian Church in Virginia, Friendship Presbyterian Church in Taipei, and more churches joining as we grow.",
+    scheduleBadge: "Meeting Schedule", scheduleTitle: "Our Romans study, meeting by meeting",
+    scheduleBody: "TAF gathers biweekly to study the Book of Romans together — in person in Taipei and online. Here's the full schedule.",
+    colMeeting: "#", colDateTime: "Date / Time", colTopic: "Topic", colLeader: "Leader", colLocation: "Location",
+    statusDone: "Done", statusUpcoming: "Upcoming",
     f1Title: "Fellowship Meals", f1Body: "Regular shared meals where the TAF community comes together over food, conversation, and genuine connection.",
     f2Title: "Prayer Sessions", f2Body: "Bilingual prayer gatherings where we lift up each other, our communities, and the Taiwan-U.S. relationship.",
     f3Title: "Bilingual Community", f3Body: "All TAF events are conducted bilingually in English and Mandarin, so everyone feels welcome and included.",
@@ -52,6 +56,10 @@ const translations = {
     aboutBody2: "TAF 聚會以英語和普通話雙語進行，歡迎臺灣人、臺裔美國人、美國人及國際友人參與。無論您是剛到臺灣、在海外求學，還是尋找跨文化信仰社群，TAF 都是您的家。",
     statMembersLabel: "成員人數", statMeetingsLabel: "已舉辦聚會", statSinceLabel: "成立於",
     growthBody: "自2026年5月成立以來，TAF 已透過10次聚會成長至約20位成員——成員來自美國維吉尼亞州的 Chesterbrook Taiwanese Presbyterian Church、臺北的 Friendship Presbyterian Church（信友堂）等教會，並持續有更多教會加入我們的行列。",
+    scheduleBadge: "聚會時程", scheduleTitle: "羅馬書查經進度表",
+    scheduleBody: "TAF 每兩週聚會一次，一同查考羅馬書——在臺北實體聚會或線上進行。以下是完整時程。",
+    colMeeting: "場次", colDateTime: "日期／時間", colTopic: "主題", colLeader: "帶領人", colLocation: "地點",
+    statusDone: "已完成", statusUpcoming: "即將舉行",
     f1Title: "團契聚餐", f1Body: "定期舉辦的共同聚餐，讓 TAF 社群成員在美食、對話與真誠的連結中相聚。",
     f2Title: "禱告聚會", f2Body: "雙語禱告聚會，我們為彼此、社群以及臺美關係代禱。",
     f3Title: "雙語社群", f3Body: "所有 TAF 活動均以英語和普通話雙語進行，讓每個人都感到受歡迎。",
@@ -70,6 +78,27 @@ const translations = {
     tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器（即將推出）", talecProgram: "TALEC — 語言與文化（即將推出）",
   },
 };
+
+const meetingSchedule = [
+  { n: 1, date: "5/11/26 @ 21:00", topic: "Romans 1:1-17", leader: "Austin + Ian", location: "Online", done: true },
+  { n: 2, date: "5/25/26 @ 21:00", topic: "Romans 1:18-32", leader: "Austin", location: "Online", done: true },
+  { n: 3, date: "6/8/26 @ 21:00", topic: "Romans 2", leader: "Ian", location: "Online", done: true },
+  { n: 4, date: "6/22/26 @ 21:00", topic: "Romans 3", leader: "Frances", location: "Online", done: true },
+  { n: 5, date: "7/6/26 @ 21:00", topic: "Romans 4", leader: "Jairo", location: "Online", done: true },
+  { n: 6, date: "7/25/26 @ 19:00", topic: "Fellowship Dinner!", leader: "Jasmine", location: "川之流精緻涮涮鍋長安店 (TPE)", done: true },
+  { n: 7, date: "8/3/26 @ 18:30", topic: "Romans 5", leader: "Mark!", location: "Taipei (CEF)", done: true },
+  { n: 8, date: "8/17/26 @ 19:00", topic: "Romans 6", leader: "Austin", location: "Taipei (CEF)", done: true },
+  { n: 9, date: "8/31/26 @ 21:00", topic: "Romans 7", leader: "Mark + Austin", location: "Online", done: true },
+  { n: 10, date: "9/14/26 @ 21:00", topic: "Romans 8", leader: "Jasmine", location: "Online", done: false },
+  { n: 11, date: "9/28/26 @ 21:00", topic: "Romans 9", leader: "Kyle", location: "Online", done: false },
+  { n: 12, date: "10/12/26 @ 21:00", topic: "Romans 10", leader: "Jairo", location: "Online", done: false },
+  { n: 13, date: "10/26/26 @ 21:00", topic: "Romans 11", leader: "Austin", location: "Online", done: false },
+  { n: 14, date: "11/9/26 @ 21:00", topic: "Romans 12", leader: "Mark + Austin", location: "Online", done: false },
+  { n: 15, date: "11/23/26 @ 21:00", topic: "Romans 13", leader: "Lilian + Ian", location: "Online", done: false },
+  { n: 16, date: "12/7/26 @ 21:00", topic: "Romans 14", leader: "Bella", location: "Online", done: false },
+  { n: 17, date: "12/21/26 @ 21:00", topic: "Romans 15", leader: "Jamin", location: "Online", done: false },
+  { n: 18, date: "12/28/26 @ 21:00", topic: "Romans 16", leader: "Austin", location: "Online", done: false },
+];
 
 export default function TAFPage() {
   const { language, toggle } = useLanguage();
@@ -146,6 +175,46 @@ export default function TAFPage() {
             <div className="text-center"><p className="text-4xl font-bold text-taiwan-blue">{language === "en" ? "May 2026" : "2026年5月"}</p><p className="text-sm text-slate-600 mt-1">{t.statSinceLabel}</p></div>
           </div>
           <p className="text-center text-slate-600 max-w-3xl mx-auto leading-relaxed">{t.growthBody}</p>
+        </div>
+      </section>
+
+      <section className="py-20 bg-slate-50 border-t border-slate-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-white text-xs font-semibold uppercase tracking-[0.2em] gradient-pill mb-5">{t.scheduleBadge}</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t.scheduleTitle}</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">{t.scheduleBody}</p>
+          </div>
+          <div className="rounded-2xl border border-slate-100 bg-white overflow-hidden shadow-sm">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm text-left border-collapse">
+                <thead>
+                  <tr className="bg-slate-900 text-white">
+                    <th className="px-4 py-3 font-semibold whitespace-nowrap">{t.colMeeting}</th>
+                    <th className="px-4 py-3 font-semibold whitespace-nowrap">{t.colDateTime}</th>
+                    <th className="px-4 py-3 font-semibold whitespace-nowrap">{t.colTopic}</th>
+                    <th className="px-4 py-3 font-semibold whitespace-nowrap">{t.colLeader}</th>
+                    <th className="px-4 py-3 font-semibold whitespace-nowrap">{t.colLocation}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {meetingSchedule.map((m) => (
+                    <tr key={m.n} className={`border-t border-slate-100 ${m.done ? "bg-emerald-50/60" : "bg-white"}`}>
+                      <td className="px-4 py-3 text-slate-500">{m.n}</td>
+                      <td className="px-4 py-3 text-slate-700 whitespace-nowrap">{m.date}</td>
+                      <td className="px-4 py-3 text-slate-900 font-medium whitespace-nowrap">{m.topic}</td>
+                      <td className="px-4 py-3 text-slate-700 whitespace-nowrap">{m.leader}</td>
+                      <td className="px-4 py-3 text-slate-700 whitespace-nowrap">{m.location}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-6 mt-6 text-xs text-slate-500">
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-sm bg-emerald-50 border border-emerald-200 inline-block"></span> {t.statusDone}</span>
+            <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-sm bg-white border border-slate-200 inline-block"></span> {t.statusUpcoming}</span>
+          </div>
         </div>
       </section>
 
