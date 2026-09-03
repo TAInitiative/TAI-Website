@@ -207,7 +207,7 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">
-              <div className="relative h-48 overflow-hidden"><Image src="/taf.png" alt="TAF Fellowship Meal" fill className="object-cover" /><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TAF</div></div>
+              <div className="relative h-48 overflow-hidden"><Image src="/taf.jpg" alt="TAF Fellowship Meal" fill className="object-cover" /><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TAF</div></div>
               <div className="p-6"><h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">{t.tafEventTitle}</h3><p className="text-slate-600 text-sm mb-4">{t.tafEventBody}</p><a href="https://tai.org.tw/taf" className="text-sm font-semibold text-slate-900 flex items-center">{t.learnMore} <i className="ph ph-caret-right ml-1"></i></a></div>
             </div>
             <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">

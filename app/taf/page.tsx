@@ -14,6 +14,7 @@ const translations = {
     heroCardLabel: "Community", heroCardTitle: "Faith that bridges cultures.",
     heroCardBody: "A welcoming space where people from all backgrounds come together in shared faith, friendship, and mission.",
     heroItem1: "Fellowship Meals", heroItem2: "Shared Prayer Sessions", heroItem3: "Bilingual Gatherings",
+    heroImageCaption: "Our first in-person meetup · July 25, 2026",
     aboutBadge: "About TAF", aboutTitle: "A community rooted in faith and friendship",
     aboutBody1: "Truth Alliance Fellowship is TAI's faith-centered community program. We are Christian and ecumenical — welcoming believers from all denominations who share a heart for Taiwan, America, and the world.",
     aboutBody2: "TAF gatherings are bilingual (English and Mandarin) and open to Taiwanese, Taiwanese Americans, Americans, and international friends. Whether you are new to Taiwan, studying abroad, or simply looking for a cross-cultural faith community, TAF is your home.",
@@ -43,6 +44,7 @@ const translations = {
     heroCardLabel: "社群", heroCardTitle: "跨越文化的信仰。",
     heroCardBody: "一個溫馨的空間，讓來自不同背景的人在共同的信仰、友誼與使命中相聚。",
     heroItem1: "團契聚餐", heroItem2: "共同禱告聚會", heroItem3: "雙語聚會",
+    heroImageCaption: "首次實體聚會 · 2026年7月25日",
     aboutBadge: "關於 TAF", aboutTitle: "以信仰與友誼為根基的社群",
     aboutBody1: "真理聯盟團契是臺美倡議以信仰為核心的社群計畫。我們是基督教普世性的社群——歡迎所有宗派的信徒，只要你對臺灣、美國與世界懷有熱情。",
     aboutBody2: "TAF 聚會以英語和普通話雙語進行，歡迎臺灣人、臺裔美國人、美國人及國際友人參與。無論您是剛到臺灣、在海外求學，還是尋找跨文化信仰社群，TAF 都是您的家。",
@@ -121,7 +123,10 @@ export default function TAFPage() {
           <div className="relative">
             <div className="glass-panel rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/80">
               <div className="relative w-full aspect-square">
-                <Image src="/taf.png" alt="TAF Fellowship" fill className="object-cover" />
+                <Image src="/taf.jpg" alt="TAF Fellowship" fill className="object-cover" />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent px-5 pt-10 pb-4">
+                  <p className="text-white text-sm font-semibold tracking-wide">{t.heroImageCaption}</p>
+                </div>
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-white shadow-lg shadow-slate-200 flex items-center justify-center text-taiwan-blue"><i className="ph ph-cross text-2xl"></i></div>
