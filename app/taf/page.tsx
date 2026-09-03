@@ -149,8 +149,8 @@ export default function TAFPage() {
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-taiwan-red/10 rounded-full blur-3xl opacity-70 -z-10 -translate-x-1/4"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
           <div className="text-left">
-            <Image src="/taf-logo.png" alt="TAF Logo" width={72} height={72} className="mb-4" />
             <span className="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-white text-xs font-semibold uppercase tracking-[0.2em] mb-6 gradient-pill">{t.heroBadge}</span>
+            <Image src="/taf-logo.png" alt="TAF Logo" width={140} height={140} className="mb-6" />
             <h1 className="text-4xl md:text-6xl font-bold text-slate-900 tracking-tight leading-tight mb-6">{t.heroTitle}</h1>
             <p className="mt-4 max-w-xl text-lg text-slate-700 leading-relaxed">{t.heroBody}</p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
