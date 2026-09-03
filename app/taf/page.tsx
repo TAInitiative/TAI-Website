@@ -166,7 +166,7 @@ export default function TAFPage() {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-white shadow-lg shadow-slate-200 flex items-center justify-center text-taiwan-blue"><i className="ph ph-cross text-2xl"></i></div>
+            <div className="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-white shadow-lg shadow-slate-200 flex items-center justify-center p-2"><Image src="/taf-logo.png" alt="TAF Logo" width={64} height={64} className="object-contain" /></div>
           </div>
         </div>
       </section>
