@@ -25,6 +25,7 @@ const translations = {
     colMeeting: "#", colDateTime: "Date / Time", colTopic: "Topic", colLeader: "Leader", colLocation: "Location",
     statusDone: "Done", statusUpcoming: "Upcoming",
     driveLinkText: "View Study Notes & Resources",
+    photoCaption: "Romans 5 Bible study · August 3, 2026",
     f1Title: "Fellowship Meals", f1Body: "Regular shared meals where the TAF community comes together over food, conversation, and genuine connection.",
     f2Title: "Prayer Sessions", f2Body: "Bilingual prayer gatherings where we lift up each other, our communities, and the Taiwan-U.S. relationship.",
     f3Title: "Bilingual Community", f3Body: "All TAF events are conducted bilingually in English and Mandarin, so everyone feels welcome and included.",
@@ -62,6 +63,7 @@ const translations = {
     colMeeting: "場次", colDateTime: "日期／時間", colTopic: "主題", colLeader: "帶領人", colLocation: "地點",
     statusDone: "已完成", statusUpcoming: "即將舉行",
     driveLinkText: "查看查經筆記與資源",
+    photoCaption: "羅馬書第五章查經 · 2026年8月3日",
     f1Title: "團契聚餐", f1Body: "定期舉辦的共同聚餐，讓 TAF 社群成員在美食、對話與真誠的連結中相聚。",
     f2Title: "禱告聚會", f2Body: "雙語禱告聚會，我們為彼此、社群以及臺美關係代禱。",
     f3Title: "雙語社群", f3Body: "所有 TAF 活動均以英語和普通話雙語進行，讓每個人都感到受歡迎。",
@@ -219,6 +221,14 @@ export default function TAFPage() {
           </div>
           <div className="text-center mt-8">
             <a href="https://drive.google.com/drive/folders/1803_I18YSCF5rcpTleYcO4IP2fF3lfC6?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 hover:border-slate-300 transition-all"><i className="ph ph-folder-open text-lg"></i> {t.driveLinkText} <i className="ph ph-arrow-up-right"></i></a>
+          </div>
+          <div className="max-w-3xl mx-auto mt-12">
+            <div className="rounded-2xl overflow-hidden shadow-lg shadow-slate-200/60 border border-slate-100">
+              <div className="relative w-full aspect-video">
+                <Image src="/taf-aug3.jpg" alt="TAF Romans 5 Bible study, August 3 2026" fill className="object-cover" />
+              </div>
+            </div>
+            <p className="text-center text-sm text-slate-500 mt-3">{t.photoCaption}</p>
           </div>
         </div>
       </section>
