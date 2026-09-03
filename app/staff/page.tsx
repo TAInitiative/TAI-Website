@@ -27,7 +27,7 @@ const translations = {
     footerLocations: "Locations", footerPrograms: "Programs", footerContact: "Contact",
     footerCopyright: "© 2026 Taiwan America Initiative (to be registered). All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
-    tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
+    tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator (Coming Soon)", talecProgram: "TALEC — Language & Culture (Coming Soon)",
   },
   zh: {
     navAbout: "關於我們", navPrograms: "計畫項目", navEvents: "活動", navCommunity: "社群", navStaff: "團隊", navGetInvolved: "加入我們",
@@ -51,7 +51,7 @@ const translations = {
     footerLocations: "據點", footerPrograms: "計畫項目", footerContact: "聯絡我們",
     footerCopyright: "© 2026 臺美倡議（籌備中）。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
-    tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
+    tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器（即將推出）", talecProgram: "TALEC — 語言與文化（即將推出）",
   },
 };
 

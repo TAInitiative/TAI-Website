@@ -18,6 +18,8 @@ const translations = {
     aboutBadge: "About TAF", aboutTitle: "A community rooted in faith and friendship",
     aboutBody1: "Truth Alliance Fellowship is TAI's faith-centered community program. We are Christian and ecumenical — welcoming believers from all denominations who share a heart for Taiwan, America, and the world.",
     aboutBody2: "TAF gatherings are bilingual (English and Mandarin) and open to Taiwanese, Taiwanese Americans, Americans, and international friends. Whether you are new to Taiwan, studying abroad, or simply looking for a cross-cultural faith community, TAF is your home.",
+    statMembersLabel: "Members", statMeetingsLabel: "Meetings Held", statSinceLabel: "Founded",
+    growthBody: "Since launching in May 2026, TAF has grown to about 20 members through 10 gatherings — with members from Chesterbrook Taiwanese Presbyterian Church in Virginia, Friendship Presbyterian Church in Taipei, and more churches joining as we grow.",
     f1Title: "Fellowship Meals", f1Body: "Regular shared meals where the TAF community comes together over food, conversation, and genuine connection.",
     f2Title: "Prayer Sessions", f2Body: "Bilingual prayer gatherings where we lift up each other, our communities, and the Taiwan-U.S. relationship.",
     f3Title: "Bilingual Community", f3Body: "All TAF events are conducted bilingually in English and Mandarin, so everyone feels welcome and included.",
@@ -33,7 +35,7 @@ const translations = {
     footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group",
     footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative (to be registered). All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
-    tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
+    tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator (Coming Soon)", talecProgram: "TALEC — Language & Culture (Coming Soon)",
   },
   zh: {
     navAboutTAI: "關於臺美倡議", navPrograms: "計畫項目", navTABA: "TABA", navTALEC: "TALEC", navGetInvolved: "加入我們",
@@ -48,6 +50,8 @@ const translations = {
     aboutBadge: "關於 TAF", aboutTitle: "以信仰與友誼為根基的社群",
     aboutBody1: "真理聯盟團契是臺美倡議以信仰為核心的社群計畫。我們是基督教普世性的社群——歡迎所有宗派的信徒，只要你對臺灣、美國與世界懷有熱情。",
     aboutBody2: "TAF 聚會以英語和普通話雙語進行，歡迎臺灣人、臺裔美國人、美國人及國際友人參與。無論您是剛到臺灣、在海外求學，還是尋找跨文化信仰社群，TAF 都是您的家。",
+    statMembersLabel: "成員人數", statMeetingsLabel: "已舉辦聚會", statSinceLabel: "成立於",
+    growthBody: "自2026年5月成立以來，TAF 已透過10次聚會成長至約20位成員——成員來自美國維吉尼亞州的 Chesterbrook Taiwanese Presbyterian Church、臺北的 Friendship Presbyterian Church（信友堂）等教會，並持續有更多教會加入我們的行列。",
     f1Title: "團契聚餐", f1Body: "定期舉辦的共同聚餐，讓 TAF 社群成員在美食、對話與真誠的連結中相聚。",
     f2Title: "禱告聚會", f2Body: "雙語禱告聚會，我們為彼此、社群以及臺美關係代禱。",
     f3Title: "雙語社群", f3Body: "所有 TAF 活動均以英語和普通話雙語進行，讓每個人都感到受歡迎。",
@@ -63,7 +67,7 @@ const translations = {
     footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團",
     footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議（籌備中）。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
-    tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
+    tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器（即將推出）", talecProgram: "TALEC — 語言與文化（即將推出）",
   },
 };
 
@@ -131,6 +135,17 @@ export default function TAFPage() {
             </div>
             <div className="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-white shadow-lg shadow-slate-200 flex items-center justify-center text-taiwan-blue"><i className="ph ph-cross text-2xl"></i></div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-14 bg-white border-t border-slate-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6 sm:grid-cols-3 mb-10">
+            <div className="text-center"><p className="text-4xl font-bold text-taiwan-blue">20+</p><p className="text-sm text-slate-600 mt-1">{t.statMembersLabel}</p></div>
+            <div className="text-center"><p className="text-4xl font-bold text-taiwan-blue">10</p><p className="text-sm text-slate-600 mt-1">{t.statMeetingsLabel}</p></div>
+            <div className="text-center"><p className="text-4xl font-bold text-taiwan-blue">{language === "en" ? "May 2026" : "2026年5月"}</p><p className="text-sm text-slate-600 mt-1">{t.statSinceLabel}</p></div>
+          </div>
+          <p className="text-center text-slate-600 max-w-3xl mx-auto leading-relaxed">{t.growthBody}</p>
         </div>
       </section>
 

@@ -32,7 +32,8 @@ const translations = {
     footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group",
     footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative (to be registered). All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
-    tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
+    tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator (Coming Soon)", talecProgram: "TALEC — Language & Culture (Coming Soon)",
+    comingSoonBadge: "Coming Soon", comingSoonBanner: "TALEC hasn't launched yet — everything below describes what we're building. Join our Discord to be notified when it opens.",
   },
   zh: {
     navAboutTAI: "關於臺美倡議", navPrograms: "計畫項目", navTAF: "TAF", navTABA: "TABA", navGetInvolved: "加入我們",
@@ -61,7 +62,8 @@ const translations = {
     footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團",
     footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議（籌備中）。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
-    tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
+    tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器（即將推出）", talecProgram: "TALEC — 語言與文化（即將推出）",
+    comingSoonBadge: "即將推出", comingSoonBanner: "TALEC 尚未正式啟動——以下內容說明我們正在籌備的計畫。加入 Discord，上線時我們將第一時間通知您。",
   },
 };
 
@@ -104,7 +106,14 @@ export default function TALECPage() {
         </div>
       </nav>
 
-      <section className="relative pt-32 pb-20 lg:pt-44 lg:pb-32 overflow-hidden hero-gradient">
+      <div className="pt-20 bg-slate-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-center gap-2 text-center">
+          <span className="inline-flex items-center py-0.5 px-2.5 rounded-full bg-white/15 text-xs font-bold uppercase tracking-wide">{t.comingSoonBadge}</span>
+          <p className="text-sm text-white/90">{t.comingSoonBanner}</p>
+        </div>
+      </div>
+
+      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden hero-gradient">
         <div className="absolute inset-0 bg-subtle-pattern opacity-50"></div>
         <div className="absolute top-10 right-0 w-96 h-96 bg-taiwan-blue/10 rounded-full blur-3xl opacity-70 -z-10 translate-x-1/3"></div>
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-taiwan-red/10 rounded-full blur-3xl opacity-70 -z-10 -translate-x-1/4"></div>

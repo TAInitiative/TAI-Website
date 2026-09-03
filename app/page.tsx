@@ -21,21 +21,24 @@ const translations = {
     card3Title: "Language & Cultural Exchange", card3Body: "Educational programs and cultural initiatives that deepen mutual understanding between Taiwanese and American communities.",
     programsTitle: "Three programs, one mission",
     programsBody: "Each TAI program serves a distinct community while advancing our shared vision of a deeper, lasting Taiwan-U.S. partnership.",
+    comingSoon: "Coming Soon", liveNow: "Active",
+    tabaComingSoonBody: "TABA hasn't launched yet — this page describes what we're building. Join our Discord to be the first to know when it opens.",
+    talecComingSoonBody: "TALEC hasn't launched yet — this page describes what we're building. Join our Discord to be the first to know when it opens.",
     tafName: "Truth Alliance Fellowship", tafBody: "A Christian ecumenical, bilingual, and international community. We gather for shared meals, prayer sessions, and cross-cultural fellowship across Taiwan and the United States.",
     tabaName: "Taiwan-America Business Accelerator", tabaBody: "A business accelerator built for companies that connect Taiwan and America. We provide mentorship, networks, and resources to help cross-border ventures thrive.",
     talecName: "Taiwan-America Language, Education, and Culture", talecBody: "Cultural and educational programs that foster language learning, mutual understanding, and lasting people-to-people ties between Taiwan and the United States.",
     eventsTitle: "Upcoming Gatherings", eventsBody: "Join us in person or virtually across our three programs.",
     viewAllEvents: "View All Events", learnMore: "Learn More",
     tafEventTitle: "TAF Fellowship Meal", tafEventBody: "A bilingual gathering for shared meals and prayer, open to the entire TAF community — Taiwanese, American, and international.",
-    tabaEventTitle: "TABA Founder Meetup", tabaEventBody: "Networking and mentorship for entrepreneurs building across the Taiwan-U.S. corridor.",
-    talecEventTitle: "TALEC Language Exchange", talecEventBody: "Regular language and cultural exchange sessions pairing Mandarin and English speakers for mutual learning.",
+    tabaEventTitle: "TABA — Coming Soon", tabaEventBody: "TABA hasn't launched yet. Join our Discord to hear about founder meetups and mentorship as soon as it opens.",
+    talecEventTitle: "TALEC — Coming Soon", talecEventBody: "TALEC hasn't launched yet. Join our Discord to hear about language exchange sessions as soon as it opens.",
     ctaBadge: "Get Involved", ctaTitle: "Ready to be part of the Taiwan-America community?",
     ctaBody: "Whether through faith, business, or cultural exchange — there is a place for you in TAI. Stay connected with our latest events, programs, and opportunities.",
     emailPlaceholder: "Enter your email address", joinNow: "Join Now", noSpam: "No spam, ever. Unsubscribe at any time.",
     footerLocations: "Locations", footerPrograms: "Programs", footerTAFCommunity: "TAF Community", footerFBGroup: "Facebook Group", footerContact: "Contact", footerStaff: "Staff",
     footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service", footerCopyright: "© 2026 Taiwan America Initiative (to be registered). All rights reserved.",
     locationUS: "Washington D.C., United States", locationTW: "Taipei, Taiwan",
-    tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator", talecProgram: "TALEC — Language & Culture",
+    tafProgram: "TAF — Truth Alliance Fellowship", tabaProgram: "TABA — Business Accelerator (Coming Soon)", talecProgram: "TALEC — Language & Culture (Coming Soon)",
   },
   zh: {
     navAbout: "關於我們", navPrograms: "計畫項目", navEvents: "活動", navCommunity: "社群", navStaff: "團隊", navGetInvolved: "加入我們",
@@ -53,21 +56,24 @@ const translations = {
     card3Title: "語言與文化交流", card3Body: "透過教育計畫與文化活動，深化臺灣與美國社群之間的相互理解。",
     programsTitle: "三個計畫，一個使命",
     programsBody: "每個 TAI 計畫服務不同的社群，共同推進我們對深化臺美關係的共同願景。",
+    comingSoon: "即將推出", liveNow: "已上線",
+    tabaComingSoonBody: "TABA 尚未正式啟動——此頁面說明我們正在籌備的內容。加入我們的 Discord，第一時間掌握上線消息。",
+    talecComingSoonBody: "TALEC 尚未正式啟動——此頁面說明我們正在籌備的內容。加入我們的 Discord，第一時間掌握上線消息。",
     tafName: "真理聯盟團契", tafBody: "一個基督教普世、雙語的國際社群。我們透過共同聚餐、禱告與跨文化交流，連結臺灣與美國的夥伴。",
     tabaName: "臺美商業加速器", tabaBody: "專為連結臺灣與美國的企業打造的加速器。我們提供導師輔導、人脈網絡與資源，協助跨境事業蓬勃發展。",
     talecName: "臺美語言、教育與文化", talecBody: "透過文化與教育計畫，促進語言學習、相互理解，並建立臺美之間長久的人際連結。",
     eventsTitle: "近期活動", eventsBody: "線上或線下參與我們三個計畫的活動。",
     viewAllEvents: "查看所有活動", learnMore: "了解更多",
     tafEventTitle: "TAF 團契聚餐", tafEventBody: "雙語聚餐與禱告活動，歡迎所有 TAF 社群成員參與——臺灣人、美國人與國際友人皆受歡迎。",
-    tabaEventTitle: "TABA 創業者聚會", tabaEventBody: "為在臺美走廊創業的企業家提供人脈與導師輔導機會。",
-    talecEventTitle: "TALEC 語言交流", talecEventBody: "定期舉辦的語言與文化交流活動，配對普通話與英語使用者進行互相學習。",
+    tabaEventTitle: "TABA — 即將推出", tabaEventBody: "TABA 尚未正式啟動。加入我們的 Discord，第一時間掌握創業者聚會與導師輔導的上線消息。",
+    talecEventTitle: "TALEC — 即將推出", talecEventBody: "TALEC 尚未正式啟動。加入我們的 Discord，第一時間掌握語言交流活動的上線消息。",
     ctaBadge: "加入我們", ctaTitle: "準備好成為臺美社群的一份子了嗎？",
     ctaBody: "無論是透過信仰、商業或文化交流——TAI 都有屬於您的位置。掌握我們最新的活動、計畫與機會。",
     emailPlaceholder: "輸入您的電子郵件", joinNow: "立即加入", noSpam: "絕不發送垃圾郵件。隨時可取消訂閱。",
     footerLocations: "據點", footerPrograms: "計畫項目", footerTAFCommunity: "TAF 社群", footerFBGroup: "Facebook 社團", footerContact: "聯絡我們", footerStaff: "團隊成員",
     footerPrivacy: "隱私政策", footerTerms: "服務條款", footerCopyright: "© 2026 臺美倡議（籌備中）。保留所有權利。",
     locationUS: "美國 華盛頓特區", locationTW: "臺灣 臺北",
-    tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器", talecProgram: "TALEC — 語言與文化",
+    tafProgram: "TAF — 真理聯盟團契", tabaProgram: "TABA — 商業加速器（即將推出）", talecProgram: "TALEC — 語言與文化（即將推出）",
   },
 };
 
@@ -179,21 +185,21 @@ export default function HomePage() {
           <div className="grid gap-6 md:grid-cols-3">
             <a href="https://tai.org.tw/taf" className="bg-white border border-slate-100 rounded-2xl p-6 card-hover block group">
               <div className="w-12 h-12 rounded-full bg-taiwan-blue/10 flex items-center justify-center mb-4"><i className="ph ph-cross text-2xl text-taiwan-blue"></i></div>
-              <div className="flex items-start justify-between mb-2"><h3 className="text-xl font-semibold text-slate-900">TAF</h3><i className="ph ph-arrow-up-right text-slate-300 group-hover:text-slate-500 transition-colors"></i></div>
+              <div className="flex items-start justify-between mb-2"><h3 className="text-xl font-semibold text-slate-900">TAF</h3><span className="inline-flex items-center py-1 px-2.5 rounded-full bg-taiwan-blue/10 text-taiwan-blue text-xs font-semibold">{t.liveNow}</span></div>
               <p className="text-sm font-medium text-taiwan-blue mb-3">{t.tafName}</p>
               <p className="text-sm text-slate-600">{t.tafBody}</p>
             </a>
             <a href="https://tai.org.tw/taba" className="bg-white border border-slate-100 rounded-2xl p-6 card-hover block group">
               <div className="w-12 h-12 rounded-full bg-taiwan-red/10 flex items-center justify-center mb-4"><i className="ph ph-rocket-launch text-2xl text-taiwan-red"></i></div>
-              <div className="flex items-start justify-between mb-2"><h3 className="text-xl font-semibold text-slate-900">TABA</h3><i className="ph ph-arrow-up-right text-slate-300 group-hover:text-slate-500 transition-colors"></i></div>
+              <div className="flex items-start justify-between mb-2"><h3 className="text-xl font-semibold text-slate-900">TABA</h3><span className="inline-flex items-center py-1 px-2.5 rounded-full bg-slate-100 text-slate-500 text-xs font-semibold">{t.comingSoon}</span></div>
               <p className="text-sm font-medium text-taiwan-red mb-3">{t.tabaName}</p>
-              <p className="text-sm text-slate-600">{t.tabaBody}</p>
+              <p className="text-sm text-slate-600">{t.tabaComingSoonBody}</p>
             </a>
             <a href="https://tai.org.tw/talec" className="bg-white border border-slate-100 rounded-2xl p-6 card-hover block group">
               <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center mb-4"><i className="ph ph-book-open text-2xl text-slate-700"></i></div>
-              <div className="flex items-start justify-between mb-2"><h3 className="text-xl font-semibold text-slate-900">TALEC</h3><i className="ph ph-arrow-up-right text-slate-300 group-hover:text-slate-500 transition-colors"></i></div>
+              <div className="flex items-start justify-between mb-2"><h3 className="text-xl font-semibold text-slate-900">TALEC</h3><span className="inline-flex items-center py-1 px-2.5 rounded-full bg-slate-100 text-slate-500 text-xs font-semibold">{t.comingSoon}</span></div>
               <p className="text-sm font-medium text-slate-600 mb-3">{t.talecName}</p>
-              <p className="text-sm text-slate-600">{t.talecBody}</p>
+              <p className="text-sm text-slate-600">{t.talecComingSoonBody}</p>
             </a>
           </div>
         </div>
@@ -211,12 +217,12 @@ export default function HomePage() {
               <div className="p-6"><h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">{t.tafEventTitle}</h3><p className="text-slate-600 text-sm mb-4">{t.tafEventBody}</p><a href="https://tai.org.tw/taf" className="text-sm font-semibold text-slate-900 flex items-center">{t.learnMore} <i className="ph ph-caret-right ml-1"></i></a></div>
             </div>
             <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">
-              <div className="relative h-48 overflow-hidden"><Image src="/taba-founder-meetup.png" alt="TABA Founder Meetup" fill className="object-cover" /><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TABA</div></div>
-              <div className="p-6"><h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">{t.tabaEventTitle}</h3><p className="text-slate-600 text-sm mb-4">{t.tabaEventBody}</p><a href="https://tai.org.tw/taba" className="text-sm font-semibold text-slate-900 flex items-center">{t.learnMore} <i className="ph ph-caret-right ml-1"></i></a></div>
+              <div className="relative h-48 overflow-hidden bg-slate-100 flex items-center justify-center"><i className="ph ph-rocket-launch text-5xl text-slate-300"></i><div className="absolute top-4 right-4 bg-slate-500 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">{t.comingSoon}</div></div>
+              <div className="p-6"><h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">{t.tabaEventTitle}</h3><p className="text-slate-600 text-sm mb-4">{t.tabaEventBody}</p><a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-slate-900 flex items-center">{t.learnMore} <i className="ph ph-caret-right ml-1"></i></a></div>
             </div>
             <div className="group border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow bg-white">
-              <div className="relative h-48 overflow-hidden"><Image src="/talec.png" alt="TALEC Language & Culture" fill className="object-cover" /><div className="absolute top-4 right-4 gradient-pill px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">TALEC</div></div>
-              <div className="p-6"><h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">{t.talecEventTitle}</h3><p className="text-slate-600 text-sm mb-4">{t.talecEventBody}</p><a href="https://tai.org.tw/talec" className="text-sm font-semibold text-slate-900 flex items-center">{t.learnMore} <i className="ph ph-caret-right ml-1"></i></a></div>
+              <div className="relative h-48 overflow-hidden bg-slate-100 flex items-center justify-center"><i className="ph ph-book-open text-5xl text-slate-300"></i><div className="absolute top-4 right-4 bg-slate-500 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide text-white shadow-sm">{t.comingSoon}</div></div>
+              <div className="p-6"><h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">{t.talecEventTitle}</h3><p className="text-slate-600 text-sm mb-4">{t.talecEventBody}</p><a href="https://discord.gg/KFqhjzVnvz" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-slate-900 flex items-center">{t.learnMore} <i className="ph ph-caret-right ml-1"></i></a></div>
             </div>
           </div>
           <div className="mt-8 text-center md:hidden"><a href="#" className="text-slate-900 font-semibold border-b-2 border-taiwan-red pb-1">{t.viewAllEvents}</a></div>
